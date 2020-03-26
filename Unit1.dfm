@@ -76,8 +76,8 @@ object Form1: TForm1
     Left = 8
     Top = 8
     Width = 147
-    Height = 161
-    Caption = 'btn1'
+    Height = 81
+    Caption = 'Action'
     DoubleBuffered = True
     ParentDoubleBuffered = False
     TabOrder = 6
@@ -88,17 +88,28 @@ object Form1: TForm1
     Top = 8
     Width = 147
     Height = 161
-    Caption = 'btn2'
+    Caption = 'Stop/ReSet'
     DoubleBuffered = True
     ParentDoubleBuffered = False
     TabOrder = 7
     OnClick = btn2Click
   end
+  object btn3: TBitBtn
+    Left = 8
+    Top = 95
+    Width = 147
+    Height = 81
+    Caption = 'AutoAction'
+    DoubleBuffered = True
+    ParentDoubleBuffered = False
+    TabOrder = 8
+    OnClick = btn3Click
+  end
   object tmr1: TTimer
     Enabled = False
     Interval = 100
     OnTimer = btn1Click
-    Left = 432
-    Top = 192
+    Left = 120
+    Top = 104
   end
 end

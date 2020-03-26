@@ -22,9 +22,11 @@ type
     btn1: TBitBtn;
     btn2: TBitBtn;
     tmr1: TTimer;
+    btn3: TBitBtn;
     procedure btn1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,7 +48,7 @@ var
 begin
   p := x ;
   FreeOnTerminate:= True;
-  Form1.mmo1.Lines.Add(IntToStr(p)+ '---');
+  Form1.mmo1.Lines.Add('Line ['+IntToStr(p)+'] Action');
 //  Form1.mmo1.Lines.Add(num.Text);
   for I := 0 to 10000 do
   begin
@@ -78,6 +80,12 @@ for I := 0 to ComponentCount - 1 do
     TProgressBar(Controls[i]).Position := 0 ;
 end;
 
+procedure TForm1.btn3Click(Sender: TObject);
+begin
+  if tmr1.Enabled then  tmr1.Enabled := false
+  else tmr1.Enabled := true;
+end;
+
 procedure TForm1.FormShow(Sender: TObject);
 var
   i : Integer;
@@ -86,7 +94,7 @@ begin
 
   for I := 0 to ComponentCount - 1 do
   if Components[i] is TProgressBar then num.Add(IntToStr(i));
-  mmo1.Lines.Add(num.Text);
+  mmo1.Lines.Add('Have ['+ inttostr(num.Count)+'] Thread Lines');
 end;
 
 end.
