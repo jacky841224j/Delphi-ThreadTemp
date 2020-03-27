@@ -55,7 +55,7 @@ begin
   p := x ;
   max := TProgressBar(Form1.Controls[StrToInt(num[p-1]) ]).max;
 //  showmessage(inttostr(TProgressBar(Form1.Controls[StrToInt(num[p-1])]).max));
-  Form1.mmo1.Lines.Add('---------------------------------');
+
   Form1.mmo1.Lines.Add('Line [ '+IntToStr(p)+' ] Action');
 
   for I := 0 to max   do

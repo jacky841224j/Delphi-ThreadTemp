@@ -49,19 +49,17 @@ implementation
 
 procedure MyThread.Execute;
 var
-  i,p,max : Integer;
+  i,p,p1 : Integer;
 begin
-  FreeOnTerminate:= True;
   p := x ;
-  max := TProgressBar(Form1.Controls[StrToInt(num[p-1]) ]).max;
-//  showmessage(inttostr(TProgressBar(Form1.Controls[StrToInt(num[p-1])]).max));
-  Form1.mmo1.Lines.Add('---------------------------------');
-  Form1.mmo1.Lines.Add('Line [ '+IntToStr(p)+' ] Action');
+  p1 := x;
+  FreeOnTerminate:= True;
+  Form1.mmo1.Lines.Add('Line ['+IntToStr(p)+'] Action');
 
-  for I := 0 to max   do
+  for I := 0 to TProgressBar(Form1.Controls[StrToInt(num[i]) ]).max do
   begin
     TProgressBar(Form1.Controls[StrToInt(num[p-1]) ]).Position := i ;
-    tlabel(Form1.Controls[StrToInt(num1[p-1]) ]).caption := 'Progress： '+inttostr(i) ;
+    tlabel(Form1.Controls[StrToInt(num1[p-1]) ]).caption := '目前進度： '+inttostr(i) ;
   end;
 
 end;
@@ -96,7 +94,6 @@ procedure TForm1.btn2Click(Sender: TObject);
 var
   i : integer;
 begin
-//tmr1.Enabled := false;
 for I := 0 to ComponentCount - 1 do
   if Components[i] is TProgressBar then
     TProgressBar(Controls[i]).Position := 0 ;
@@ -120,7 +117,7 @@ begin
   for I := 0 to ComponentCount - 1 do
   if Components[i] is Tlabel then num1.Add(IntToStr(i));
 
-  mmo1.Lines.Add('Have [ '+ inttostr(num.Count)+' ] Thread Lines');
+  mmo1.Lines.Add('Have ['+ inttostr(num.Count)+'] Thread Lines');
 end;
 
 end.

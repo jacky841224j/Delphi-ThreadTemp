@@ -18,9 +18,9 @@ object Form1: TForm1
   object lbl1: TLabel
     Left = 8
     Top = 182
-    Width = 64
-    Height = 24
-    Caption = 'Progress'
+    Width = 32
+    Height = 26
+    Caption = #36914#24230
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -31,9 +31,9 @@ object Form1: TForm1
   object lbl2: TLabel
     Left = 8
     Top = 240
-    Width = 64
+    Width = 32
     Height = 24
-    Caption = 'Progress'
+    Caption = #36914#24230
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -44,9 +44,9 @@ object Form1: TForm1
   object lbl3: TLabel
     Left = 8
     Top = 304
-    Width = 64
-    Height = 24
-    Caption = 'Progress'
+    Width = 32
+    Height = 18
+    Caption = #36914#24230
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -57,9 +57,9 @@ object Form1: TForm1
   object lbl4: TLabel
     Left = 8
     Top = 368
-    Width = 64
+    Width = 32
     Height = 24
-    Caption = 'Progress'
+    Caption = #36914#24230
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -70,9 +70,9 @@ object Form1: TForm1
   object lbl5: TLabel
     Left = 8
     Top = 424
-    Width = 64
+    Width = 32
     Height = 24
-    Caption = 'Progress'
+    Caption = #36914#24230
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -122,7 +122,7 @@ object Form1: TForm1
     Top = 368
     Width = 684
     Height = 33
-    Max = 5000
+    Max = 10000
     Smooth = True
     SmoothReverse = True
     TabOrder = 4
@@ -132,7 +132,7 @@ object Form1: TForm1
     Top = 424
     Width = 684
     Height = 33
-    Max = 5000
+    Max = 10000
     Smooth = True
     SmoothReverse = True
     TabOrder = 5
@@ -153,7 +153,7 @@ object Form1: TForm1
     Top = 8
     Width = 147
     Height = 161
-    Caption = 'ReSet'
+    Caption = 'Stop/ReSet'
     DoubleBuffered = True
     ParentDoubleBuffered = False
     TabOrder = 7
@@ -164,7 +164,7 @@ object Form1: TForm1
     Top = 95
     Width = 147
     Height = 81
-    Caption = 'AutoAction/Stop'
+    Caption = 'AutoAction'
     DoubleBuffered = True
     ParentDoubleBuffered = False
     TabOrder = 8
@@ -172,7 +172,7 @@ object Form1: TForm1
   end
   object tmr1: TTimer
     Enabled = False
-    Interval = 500
+    Interval = 100
     OnTimer = btn1Click
     Left = 120
     Top = 104

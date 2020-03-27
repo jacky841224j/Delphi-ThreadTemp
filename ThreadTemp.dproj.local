@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
+	<Transactions>
     <Transaction>2020/03/26 17:03:30.823.dproj,C:\Users\190304\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\190304\Documents\RAD Studio\Projects\ThreadTemp.dproj</Transaction>
     <Transaction>2020/03/26 17:03:39.443.dproj,C:\Users\190304\Documents\RAD Studio\Projects\ThreadTemp.dproj=C:\Users\190304\Desktop\ThreadTemp.dproj</Transaction>
   </Transactions>
